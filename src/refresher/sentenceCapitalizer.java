@@ -17,6 +17,7 @@ public class sentencecapitalizer
 	public void sentencecapitalizer()
 	{
 	  ArrayList <Character> arraylist = new ArrayList <Character>();
+	  StringBuilder string= new StringBuilder ();
 	  for(int i=0; i<=sentence.length()-1;i++)
 	  {
 		  arraylist.add(sentence.charAt(i));
@@ -28,8 +29,11 @@ public class sentencecapitalizer
 		  {
 			  arraylist.set(i+2, Character.toUpperCase(arraylist.get(i+2)));
 		  }
+		  string.append(arraylist.get(i));
 	  }
-	  System.out.println(arraylist);
+	 
+	  System.out.println(string);
+	  
 	}
 	
 	public static void main (String [] args) 
