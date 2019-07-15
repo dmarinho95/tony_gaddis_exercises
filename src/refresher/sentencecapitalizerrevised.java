@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class sentencecapitalizer 
+public class sentencecapitalizerrevised 
 {
 	String sentence;
 	
-	public sentencecapitalizer (String sentence)
+	public sentencecapitalizerrevised (String sentence)
 	{
 		this.sentence = sentence;
 	}
@@ -39,7 +39,7 @@ public class sentencecapitalizer
 	public static void main (String [] args) 
 	{
 		String sentence = "hello. my name is Joe. what is your name ?";
-		sentencecapitalizer myformatter = new sentencecapitalizer (sentence);
+		sentencecapitalizerrevised myformatter = new sentencecapitalizerrevised (sentence);
 		myformatter.sentencecapitalizer();
 		
 	}
